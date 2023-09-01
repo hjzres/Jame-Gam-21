@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Dabloon : MonoBehaviour
+public class Doubloon : MonoBehaviour
 {
     [SerializeField] private Text money;
 

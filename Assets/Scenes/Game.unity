@@ -448,7 +448,7 @@ GameObject:
   - component: {fileID: 430858057}
   - component: {fileID: 430858056}
   m_Layer: 5
-  m_Name: Money
+  m_Name: Doubloon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
