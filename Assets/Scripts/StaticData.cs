@@ -4,14 +4,8 @@ using UnityEngine;
 
 public class StaticData : MonoBehaviour
 {
-    public static int money;
-    public static int storage;
-    public static int agility;
-
-    private void Awake()
-    {
-        money = 0;
-        storage = 12;
-        agility = 1;
-    }
+    // These are the things that never will reset
+    public static int money = 10; 
+    public static int storage = 12;
+    public static int agility = 1;
 }
