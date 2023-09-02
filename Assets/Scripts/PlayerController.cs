@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 0.1f;
-    public float jumpHeight = 5;
-    public float airtime = 1;
+    public float speed = 20f;
+    public float jumpHeight = 4f;
+    public float airtime = 0.6f;
     private float gravity;
     private float jumpForce;
 
     private CharacterController controller;
 
-    public float velY = 0f;
+    private float velY = 0f;
 
     // Start is called before the first frame update
     void Start()
