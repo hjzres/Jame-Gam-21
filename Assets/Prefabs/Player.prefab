@@ -292,9 +292,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f3f32c8b0fbfe0448cdc4e55051a7ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.1
-  jumpHeight: 5
-  airtime: 1
+  speed: 20
+  jumpHeight: 4
+  airtime: 0.6
   velY: 0
 --- !u!143 &4200904009764483800
 CharacterController:

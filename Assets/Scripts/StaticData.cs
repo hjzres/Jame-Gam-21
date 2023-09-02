@@ -8,4 +8,5 @@ public class StaticData : MonoBehaviour
     public static int money = 0; 
     public static int storage = 12;
     public static int dexterity = 1;
+    public static int walkSpeed = 1;
 }
