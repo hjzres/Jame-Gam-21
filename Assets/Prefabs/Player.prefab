@@ -31,7 +31,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2716410694545926879}
   m_Father: {fileID: 1679474160505381482}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &6713010005344941786
@@ -132,12 +133,12 @@ Transform:
   m_GameObject: {fileID: 2936251312872643312}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.48250642, z: -0, w: 0.87589246}
-  m_LocalPosition: {x: 0.08, y: -0.32, z: 0.58}
+  m_LocalPosition: {x: 0.08, y: -1.8199999, z: 0.5799999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6737758798965480272}
-  m_Father: {fileID: 1679474160505381482}
+  m_Father: {fileID: 7885520877882034807}
   m_LocalEulerAnglesHint: {x: 0, y: 57.698, z: 0}
 --- !u!1 &4113437529274242638
 GameObject:
@@ -277,7 +278,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7885520877882034807}
-  - {fileID: 2716410694545926879}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4156396934275449088
@@ -293,8 +293,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.1
-  gravity: -1
-  jumpForce: 1
+  jumpHeight: 5
+  airtime: 1
+  velY: 0
 --- !u!143 &4200904009764483800
 CharacterController:
   m_ObjectHideFlags: 0
