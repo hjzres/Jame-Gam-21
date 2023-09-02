@@ -10,6 +10,6 @@ public class Doubloon : MonoBehaviour
 
     private void Update()
     {
-        money.text = StaticData.money + "Ð";
+        money.text = StaticData.money.ToString();
     }
 }
