@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1628066984538806853}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalPosition: {x: 0, y: 1.963, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -121,6 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce88a42c4fcf65c4aa6bbc33abf77ecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxDistance: 3
 --- !u!1 &2936251312872643312
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,7 +273,7 @@ GameObject:
   - component: {fileID: 4200904009764483800}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -305,9 +306,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f3f32c8b0fbfe0448cdc4e55051a7ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.1
-  jumpHeight: 5
-  airtime: 1
+  speed: 20
+  jumpHeight: 4
+  airtime: 0.6
 --- !u!143 &4200904009764483800
 CharacterController:
   m_ObjectHideFlags: 0
@@ -327,8 +328,8 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 2
-  m_Radius: 0.5
+  m_Height: 4
+  m_Radius: 1
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08

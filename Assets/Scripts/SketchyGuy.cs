@@ -6,17 +6,10 @@ public class SketchyGuy : MonoBehaviour
 {
     [SerializeField] GameObject UI;
 
-    private void Awake()
+    public void openDealerMenu()
     {
-        UI.SetActive(false);
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.tag == "player")
-        {
-            UI.SetActive(true);
-            Time.timeScale = 0;
-            Cursor.lockState = CursorLockMode.None;
-        }
+        UI.SetActive(true);
+        Time.timeScale = 0;
+        Cursor.lockState = CursorLockMode.None;
     }
 }

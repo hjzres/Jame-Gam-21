@@ -769,53 +769,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3038680881181764087, guid: addb5f8d66ead804faf49274e3b93a85, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9961423
-      objectReference: {fileID: 0}
-    - target: {fileID: 3038680881181764087, guid: addb5f8d66ead804faf49274e3b93a85, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.086500116
-      objectReference: {fileID: 0}
-    - target: {fileID: 3038680881181764087, guid: addb5f8d66ead804faf49274e3b93a85, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.014717029
-      objectReference: {fileID: 0}
-    - target: {fileID: 3038680881181764087, guid: addb5f8d66ead804faf49274e3b93a85, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.0012779547
-      objectReference: {fileID: 0}
-    - target: {fileID: 4156396934275449088, guid: addb5f8d66ead804faf49274e3b93a85, type: 3}
-      propertyPath: speed
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4156396934275449088, guid: addb5f8d66ead804faf49274e3b93a85, type: 3}
-      propertyPath: airtime
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4156396934275449088, guid: addb5f8d66ead804faf49274e3b93a85, type: 3}
-      propertyPath: gravity
-      value: -32
-      objectReference: {fileID: 0}
-    - target: {fileID: 4156396934275449088, guid: addb5f8d66ead804faf49274e3b93a85, type: 3}
-      propertyPath: jumpForce
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 4156396934275449088, guid: addb5f8d66ead804faf49274e3b93a85, type: 3}
-      propertyPath: jumpHeight
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4156396934275449088, guid: addb5f8d66ead804faf49274e3b93a85, type: 3}
-      propertyPath: jumpLength
-      value: 0.6
-      objectReference: {fileID: 0}
     - target: {fileID: 7414419365375498861, guid: addb5f8d66ead804faf49274e3b93a85, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 5911976015300786549, guid: addb5f8d66ead804faf49274e3b93a85, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: addb5f8d66ead804faf49274e3b93a85, type: 3}

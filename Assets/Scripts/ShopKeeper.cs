@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class ShopKeeper : MonoBehaviour
 {
+    [SerializeField] private GameObject UI;
     [SerializeField] private Image[] axe;
     [SerializeField] private string[] pros, cons;
     [SerializeField] private Text pros_text, cons_Text;
@@ -12,6 +13,12 @@ public class ShopKeeper : MonoBehaviour
     private int axe2;
     private int axe3;
 
+    public void openShopMenu()
+    {
+        UI.SetActive(true);
+        Time.timeScale = 0;
+        Cursor.lockState = CursorLockMode.None;
+    }
 
     public void ChooseAxe()
     {

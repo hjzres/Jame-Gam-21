@@ -29,7 +29,20 @@ public class PlayerInteract : MonoBehaviour
 
                 // hit.transform.gameObject.transform.position += hit.transform.gameObject.transform.forward;
 
-                hit.transform.gameObject.GetComponent<TreeInteract>().Interact();
+                if(hit.transform.gameObject.tag == "Sketchy Guy")
+                {
+                    hit.transform.gameObject.GetComponent<SketchyGuy>().openDealerMenu();
+                }
+                else if(hit.transform.gameObject.tag == "Shop Keeper")
+                {
+                    hit.transform.gameObject.GetComponent<ShopKeeper>().openShopMenu();
+                }
+                else
+                {
+                    hit.transform.gameObject.GetComponent<TreeInteract>().Interact();
+
+                }
+
             } else {
                 Debug.DrawRay(rayOrigin, transform.forward * 1000, Color.white);
                 Debug.Log("Did not Hit");

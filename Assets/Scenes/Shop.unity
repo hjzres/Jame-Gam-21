@@ -3578,21 +3578,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4200904009764483800, guid: addb5f8d66ead804faf49274e3b93a85, type: 3}
-      propertyPath: m_Height
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4200904009764483800, guid: addb5f8d66ead804faf49274e3b93a85, type: 3}
-      propertyPath: m_Radius
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7414419365375498861, guid: addb5f8d66ead804faf49274e3b93a85, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7885520877882034807, guid: addb5f8d66ead804faf49274e3b93a85, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.963
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3604,27 +3592,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5920320156293835213, guid: 8c9dc36132e70b74f9671ae915c3ace2, type: 3}
   m_PrefabInstance: {fileID: 2941139824679154151}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &1905340639
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1905340633}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 3.81102, y: 1.5476342, z: 7.8794494}
-  m_Center: {x: 0.16974874, y: 0.1310937, z: -2.3232625}
 --- !u!114 &1905340640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4135,13 +4102,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sketchy Guy
       objectReference: {fileID: 0}
+    - target: {fileID: 5920320156293835213, guid: 8c9dc36132e70b74f9671ae915c3ace2, type: 3}
+      propertyPath: m_TagString
+      value: Sketchy Guy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8454146544975999128, guid: 8c9dc36132e70b74f9671ae915c3ace2, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5920320156293835213, guid: 8c9dc36132e70b74f9671ae915c3ace2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1905340639}
     - targetCorrespondingSourceObject: {fileID: 5920320156293835213, guid: 8c9dc36132e70b74f9671ae915c3ace2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1905340640}
