@@ -14,7 +14,15 @@ public class Buttons : MonoBehaviour
     }
     public void WalkSpeed()
     {
-        StaticData.walkSpeed+=5;
+        StaticData.walkSpeed++;
+    }
+
+    public void Exit(string title)
+    {
+        Time.timeScale=1.0f;
+        GameObject.Find(title).SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+
     }
 
 }
