@@ -27,7 +27,9 @@ public class PlayerInteract : MonoBehaviour
                 Debug.DrawRay(rayOrigin, transform.forward * hit.distance, Color.yellow);
                 Debug.Log("Did Hit");
 
-                hit.transform.gameObject.transform.position += hit.transform.gameObject.transform.forward;
+                // hit.transform.gameObject.transform.position += hit.transform.gameObject.transform.forward;
+
+                hit.transform.gameObject.GetComponent<TreeInteract>().Interact();
             } else {
                 Debug.DrawRay(rayOrigin, transform.forward * 1000, Color.white);
                 Debug.Log("Did not Hit");
