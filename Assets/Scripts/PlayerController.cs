@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
             velY += gravity * Time.deltaTime;
         }
 
-        Vector3 vel = (transform.forward * inputDir.y + transform.right * inputDir.x).normalized * speed +  Vector3.up * velY;
+        Vector3 vel = (transform.forward * inputDir.y + transform.right * inputDir.x).normalized * (StaticData.walkSpeed + speed) +  Vector3.up * velY;
 
         controller.Move(vel * Time.deltaTime);
     }
