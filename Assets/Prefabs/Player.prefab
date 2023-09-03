@@ -354,9 +354,7 @@ MonoBehaviour:
   axes:
   - {fileID: 2100000, guid: bef208b4a032ddf439f80dd36ffad1be, type: 2}
   - {fileID: 2100000, guid: 8d00b4bb7187fe54992845c9a2bfaa4d, type: 2}
-  - {fileID: 2100000, guid: 2d3aa6fea3a655b4d976bac4c40cf1cd, type: 2}
   - {fileID: 2100000, guid: c698cd3b8d2bdf2488e4a62af7043223, type: 2}
-  - {fileID: 2100000, guid: 3e48fa68f95882349ad1fcd5bfac8565, type: 2}
   - {fileID: 2100000, guid: a74ed3d7b513a22449433b376ab2329b, type: 2}
 --- !u!65 &7018709476876814307
 BoxCollider:

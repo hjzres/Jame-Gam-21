@@ -982,35 +982,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 1340703016}
-  howManyAxes: 6
+  howManyAxes: 4
   axes:
   - {fileID: 21300000, guid: 4c18c2fc2328f0d4583f282a09f1028c, type: 3}
   - {fileID: 21300000, guid: 1defbaf5825dbe1468e19415748a62df, type: 3}
-  - {fileID: 21300000, guid: 3bdb48334c4f6324d8118848cb6b3e99, type: 3}
   - {fileID: 21300000, guid: f8dfcb19ddf11fa4e9c114c504e8a8fd, type: 3}
-  - {fileID: 21300000, guid: 36ee51176f27717418e64797ce490311, type: 3}
   - {fileID: 21300000, guid: 311442cecfbb86a438f22119d7110228, type: 3}
   name:
   - Basic Axe
   - Battle Axe
-  - Fire Axe
   - Pickaxe
-  - Throwing Axe
   - Wind Axe
   pros:
   - None
   - Can chop the tree once to break it
-  - Chops tree faster
   - Pickaxe
-  - Can chop multiple trees at once
-  - Chops tree faster
+  - You chop wood faster
   cons:
   - None
   - Walk Slower
-  - has a 50% chance to burn the logs
   - 2x slower
-  - You have to pick it up again
-  - the wood blows away when it drops
+  - The wood blows away
   pros_text1: {fileID: 1688221067}
   pros_text2: {fileID: 1008878158}
   pros_text3: {fileID: 2112705087}
@@ -1913,6 +1905,7 @@ RectTransform:
   - {fileID: 1340703017}
   - {fileID: 2145596263}
   - {fileID: 789482147}
+  - {fileID: 1807464709}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4724,6 +4717,117 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &1807464708
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1807464709}
+  - component: {fileID: 1807464713}
+  - component: {fileID: 1807464712}
+  - component: {fileID: 1807464711}
+  - component: {fileID: 1807464710}
+  m_Layer: 5
+  m_Name: Click to interact
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1807464709
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807464708}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 826274103}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -23.388153}
+  m_SizeDelta: {x: 235.4937, y: 46.776306}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1807464710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807464708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334a45fcd3221a44aa3990d8f112b5b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 5
+--- !u!114 &1807464711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807464708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
+--- !u!114 &1807464712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807464708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 256
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Click to interact
+
+'
+--- !u!222 &1807464713
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807464708}
+  m_CullTransparentMesh: 1
 --- !u!1 &1871954081
 GameObject:
   m_ObjectHideFlags: 0

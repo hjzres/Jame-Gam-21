@@ -7,13 +7,13 @@ public class StaticData : MonoBehaviour
     // These are the things that never will reset
     public static float money = 0; 
     public static int storage = 12;
-    public static int dexterity = 1;
+    public static float dexterity = 1;
     public static int walkSpeed = 14;
     public static int day = 1;
 
     // These are the variables that are motified by the axe type
     public static int motifiedStorage = storage;
-    public static int motifiedDexterity = dexterity;
+    public static float motifiedDexterity = dexterity;
     public static int motifiedWalkSpeed = walkSpeed;
 
     // Shop

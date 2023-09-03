@@ -58,7 +58,7 @@ public class Clock : MonoBehaviour
     {
         Start();
         StaticData.day++;
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(0);
         StaticData.motifiedDexterity = StaticData.dexterity;
         StaticData.motifiedStorage = StaticData.storage;
         StaticData.motifiedWalkSpeed = StaticData.walkSpeed;

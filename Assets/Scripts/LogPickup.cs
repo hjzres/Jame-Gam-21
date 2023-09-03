@@ -12,4 +12,9 @@ public class LogPickup : MonoBehaviour
             Destroy(other.gameObject);
         }
     }
+
+    private void Update()
+    {
+        Debug.Log(StaticData.motifiedDexterity);
+    }
 }

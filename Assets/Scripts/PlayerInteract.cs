@@ -26,7 +26,7 @@ public class PlayerInteract : MonoBehaviour
 
             RaycastHit hit;
 
-            float interactInterval = 0.758f - StaticData.motifiedDexterity * 0.008f;
+            float interactInterval = 0.765f - StaticData.motifiedDexterity * 0.015f;
 
             if(Physics.Raycast(rayOrigin, transform.forward, out hit, maxDistance)) {
                 if((Time.time - lastInteract) < interactInterval) {
