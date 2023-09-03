@@ -7,7 +7,7 @@ public class ShopKeeper : MonoBehaviour
 {
     [SerializeField] private GameObject UI;
     [SerializeField] private Texture[] axe;
-    [SerializeField] private string[] pros, cons;
+    [SerializeField] private string[] prosAxe1, prosAxe2, prosAxe3, consAxe1, consAxe2, consAxe3;
     [SerializeField] private Text pros_text, cons_Text;
     [SerializeField] private Image _axe1, _axe2, _axe3;
     private int axe1;
