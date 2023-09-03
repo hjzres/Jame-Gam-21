@@ -6,9 +6,10 @@ using UnityEngine.UI;
 public class ShopKeeper : MonoBehaviour
 {
     [SerializeField] private GameObject UI;
-    [SerializeField] private Image[] axe;
+    [SerializeField] private Texture[] axe;
     [SerializeField] private string[] pros, cons;
     [SerializeField] private Text pros_text, cons_Text;
+    [SerializeField] private Image _axe1, _axe2, _axe3;
     private int axe1;
     private int axe2;
     private int axe3;
