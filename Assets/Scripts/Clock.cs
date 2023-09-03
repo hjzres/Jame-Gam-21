@@ -23,26 +23,34 @@ public class Clock : MonoBehaviour
 
     private void Update()
     {
-        time += Time.deltaTime;
-        if(time >= seconds/17/6)
+        if(hours == 10 && cycle == "PM")
         {
-            minutes += 1;
-            time = 0;
+            Start();
+            StaticData.day++;
         }
-        if(minutes > 5)
+        else
         {
-            hours ++;
-            minutes = 0;
-        }
-        if(hours > 11)
-        {
-            cycle = "PM";
-        }
-        if(hours > 12)
-        {
-            hours = 1;
-        }
+            time += Time.deltaTime;
+            if (time >= seconds / 17 / 6)
+            {
+                minutes += 1;
+                time = 0;
+            }
+            if (minutes > 5)
+            {
+                hours++;
+                minutes = 0;
+            }
+            if (hours > 11)
+            {
+                cycle = "PM";
+            }
+            if (hours > 12)
+            {
+                hours = 1;
+            }
 
-        text.text = hours + ":" + minutes + "0 " + cycle;
+            text.text = hours + ":" + minutes + "0 " + cycle;
+        }
     }
 }
