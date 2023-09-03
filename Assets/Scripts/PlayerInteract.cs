@@ -8,6 +8,9 @@ public class PlayerInteract : MonoBehaviour
     public float maxDistance = 3;
 
     private Camera cam;
+    private float lastInteract = 0;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +26,16 @@ public class PlayerInteract : MonoBehaviour
 
             RaycastHit hit;
 
+            float interactInterval = 0.758f - StaticData.motifiedDexterity * 0.008f;
+
             if(Physics.Raycast(rayOrigin, transform.forward, out hit, maxDistance)) {
+                if((Time.time - lastInteract) < interactInterval) {
+                    return;
+                }
+
+                lastInteract = Time.time;
+                
+
                 if(hit.transform.gameObject.tag == "Sketchy Guy")
                 {
                     hit.transform.gameObject.GetComponent<SketchyGuy>().openDealerMenu();
@@ -37,6 +49,8 @@ public class PlayerInteract : MonoBehaviour
                     hit.transform.gameObject.GetComponent<TreeInteract>().Interact();
 
                 }
+
+                
 
             }
         }

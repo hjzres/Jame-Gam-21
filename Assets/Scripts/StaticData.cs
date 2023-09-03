@@ -12,9 +12,9 @@ public class StaticData : MonoBehaviour
     public static int day = 1;
 
     // These are the variables that are motified by the axe type
-    public static int motifiedStorage;
-    public static int motifiedDexterity;
-    public static int motifiedWalkSpeed;
+    public static int motifiedStorage = storage;
+    public static int motifiedDexterity = dexterity;
+    public static int motifiedWalkSpeed = walkSpeed;
 
     // Shop
     public static float dexterityCost = 40;
