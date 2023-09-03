@@ -41,11 +41,11 @@ public class ShopKeeper : MonoBehaviour
         axe2 = Random.Range(0, howManyAxes);
         axe3 = Random.Range(0, howManyAxes);
 
-        if(axe2 == axe1)
+        while(axe2 == axe1)
         {
             axe2 = Random.Range(0, axes.Length - 1);
         }
-        if(axe3 == axe1 || axe3 == axe2)
+        while(axe3 == axe1 || axe3 == axe2)
         {
             axe3 = Random.Range(0, axes.Length - 1);
         }

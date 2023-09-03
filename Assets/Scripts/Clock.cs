@@ -19,6 +19,9 @@ public class Clock : MonoBehaviour
         hours = 7;
         minutes = 0;
         cycle = "AM";
+        StaticData.motifiedDexterity = StaticData.dexterity;
+        StaticData.motifiedStorage = StaticData.storage;
+        StaticData.motifiedWalkSpeed = StaticData.walkSpeed;
     }
 
     private void Update()

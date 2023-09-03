@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TreeInteract : MonoBehaviour
 {
-    private int health = 3;
+    public int health = 3;
     private Animator animator;
 
     // Start is called before the first frame update

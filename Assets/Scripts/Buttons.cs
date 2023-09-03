@@ -19,6 +19,7 @@ public class Buttons : MonoBehaviour
         if (StaticData.money >= StaticData.dexterityCost)
         {
             StaticData.dexterity++;
+            StaticData.motifiedDexterity++;
             StaticData.dexterityCost *= 1.5f;
         }
     }
@@ -35,6 +36,7 @@ public class Buttons : MonoBehaviour
         if (StaticData.money >= StaticData.walkSpeedCost)
         {
             StaticData.walkSpeed++;
+            StaticData.motifiedWalkSpeed++;
             StaticData.walkSpeedCost *= 1.5f;
         }
     }
@@ -51,15 +53,15 @@ public class Buttons : MonoBehaviour
     {
         if(axeNum == 1)
         {
-            StaticData.axe = shopkeeper.name1.text;
+            StaticData.axe = shopkeeper.axe1;
         }
         if(axeNum == 2)
         {
-            StaticData.axe = shopkeeper.name2.text;
+            StaticData.axe = shopkeeper.axe2;
         }
         if(axeNum == 3)
         {
-            StaticData.axe = shopkeeper.name3.text;
+            StaticData.axe = shopkeeper.axe3;
         }
         print(StaticData.axe);
     }
