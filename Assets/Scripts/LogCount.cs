@@ -11,6 +11,6 @@ public class LogCount : MonoBehaviour
     private void Update()
     {
         amount = StaticData.logs;
-        text.text = amount.ToString();
+        text.text = amount + "/" + StaticData.storage;
     }
 }

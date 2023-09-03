@@ -286,7 +286,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 518230304817865030, guid: 47cffb8a0904c1746a649f1038986ed3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 789482148}
   m_SourcePrefab: {fileID: 100100000, guid: 47cffb8a0904c1746a649f1038986ed3, type: 3}
 --- !u!1 &109708592
 GameObject:
@@ -877,6 +880,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 324428884}
   m_CullTransparentMesh: 1
+--- !u!1 &380622989 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 518230304817865030, guid: 47cffb8a0904c1746a649f1038986ed3, type: 3}
+  m_PrefabInstance: {fileID: 51603199}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &435425912
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,7 +1008,7 @@ MonoBehaviour:
   - None
   - Walk Slower
   - has a 50% chance to burn the logs
-  - Pickaxe
+  - 2x slower
   - You have to pick it up again
   - the wood blows away when it drops
   pros_text1: {fileID: 1688221067}
@@ -1795,6 +1803,19 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3583473072110259482, guid: 47cffb8a0904c1746a649f1038986ed3, type: 3}
   m_PrefabInstance: {fileID: 51603199}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &789482148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380622989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4afb07158264e834583de180eb084aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: {fileID: 1594699102}
 --- !u!1 &826274099
 GameObject:
   m_ObjectHideFlags: 0
@@ -4038,6 +4059,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580121616}
   m_CullTransparentMesh: 1
+--- !u!114 &1594699102 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1967683878837840192, guid: 47cffb8a0904c1746a649f1038986ed3, type: 3}
+  m_PrefabInstance: {fileID: 51603199}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1599161750
 GameObject:
   m_ObjectHideFlags: 0

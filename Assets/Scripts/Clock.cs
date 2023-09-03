@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System.Data.SqlTypes;
 
 public class Clock : MonoBehaviour
 {
@@ -19,17 +21,13 @@ public class Clock : MonoBehaviour
         hours = 7;
         minutes = 0;
         cycle = "AM";
-        StaticData.motifiedDexterity = StaticData.dexterity;
-        StaticData.motifiedStorage = StaticData.storage;
-        StaticData.motifiedWalkSpeed = StaticData.walkSpeed;
     }
 
     private void Update()
     {
-        if(hours == 10 && cycle == "PM")
+        if(hours == 12 && cycle == "PM")
         {
-            Start();
-            StaticData.day++;
+            Reset();
         }
         else
         {
@@ -55,5 +53,16 @@ public class Clock : MonoBehaviour
 
             text.text = hours + ":" + minutes + "0 " + cycle;
         }
+    }
+    public void Reset()
+    {
+        Start();
+        StaticData.day++;
+        SceneManager.LoadScene(2);
+        StaticData.motifiedDexterity = StaticData.dexterity;
+        StaticData.motifiedStorage = StaticData.storage;
+        StaticData.motifiedWalkSpeed = StaticData.walkSpeed;
+        StaticData.logs = 0;
+        StaticData.axe = 7;
     }
 }

@@ -18,11 +18,20 @@ public class AxeToTree : MonoBehaviour
         switch (StaticData.axe)
         {
             case 0:
-                treeinteract.health = 3;
                 break;
             case 1:
                 treeinteract.health = 1;
-                StaticData.motifiedWalkSpeed = StaticData.walkSpeed/2;
+                StaticData.motifiedWalkSpeed = StaticData.walkSpeed/3;
+                break;
+            case 2:
+                break;
+            case 3:
+                StaticData.motifiedDexterity = StaticData.dexterity/2;
+                break;
+            case 4:
+                break;
+            case 5:
+                StaticData.motifiedDexterity = StaticData.dexterity * 2;
                 break;
         }
     }

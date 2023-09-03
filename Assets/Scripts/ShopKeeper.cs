@@ -27,10 +27,10 @@ public class ShopKeeper : MonoBehaviour
         
         if(originalDayCount < StaticData.day)
         {
+            ChooseAxe();
             UI.SetActive(true);
             Time.timeScale = 0;
             Cursor.lockState = CursorLockMode.None;
-            ChooseAxe();
             originalDayCount++;
         }
     }

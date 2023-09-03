@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class LogPickup : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "log")
+        if (other.gameObject.tag == "log" && StaticData.logs < StaticData.storage)
         {
+            StaticData.logs++;
             Destroy(other.gameObject);
         }
     }

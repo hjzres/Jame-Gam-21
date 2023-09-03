@@ -20,6 +20,7 @@ public class Buttons : MonoBehaviour
         {
             StaticData.dexterity++;
             StaticData.motifiedDexterity++;
+            StaticData.money -= StaticData.dexterityCost;
             StaticData.dexterityCost *= 1.5f;
         }
     }
@@ -28,6 +29,7 @@ public class Buttons : MonoBehaviour
         if (StaticData.money >= StaticData.storageCost)
         {
             StaticData.storage += StaticData.storage / 4;
+            StaticData.money -= StaticData.storageCost;
             StaticData.storageCost *= 1.5f;
         }
     }
@@ -37,6 +39,7 @@ public class Buttons : MonoBehaviour
         {
             StaticData.walkSpeed++;
             StaticData.motifiedWalkSpeed++;
+            StaticData.money -= StaticData.walkSpeedCost;
             StaticData.walkSpeedCost *= 1.5f;
         }
     }
