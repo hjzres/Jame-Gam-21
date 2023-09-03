@@ -7,6 +7,8 @@ TagManager:
   - player
   - Sketchy Guy
   - Shop Keeper
+  - log
+  - tree
   layers:
   - Default
   - TransparentFX

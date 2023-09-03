@@ -24,11 +24,6 @@ public class PlayerInteract : MonoBehaviour
             RaycastHit hit;
 
             if(Physics.Raycast(rayOrigin, transform.forward, out hit, maxDistance)) {
-                Debug.DrawRay(rayOrigin, transform.forward * hit.distance, Color.yellow);
-                Debug.Log("Did Hit");
-
-                // hit.transform.gameObject.transform.position += hit.transform.gameObject.transform.forward;
-
                 if(hit.transform.gameObject.tag == "Sketchy Guy")
                 {
                     hit.transform.gameObject.GetComponent<SketchyGuy>().openDealerMenu();
@@ -43,9 +38,6 @@ public class PlayerInteract : MonoBehaviour
 
                 }
 
-            } else {
-                Debug.DrawRay(rayOrigin, transform.forward * 1000, Color.white);
-                Debug.Log("Did not Hit");
             }
         }
     }
